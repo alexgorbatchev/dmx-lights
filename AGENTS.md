@@ -22,6 +22,16 @@ We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to 
    node cli/export-fixture.js -p qlcplus_4.12.2 <manufacturer>/<fixture> -o ../../qlc/
    ```
 
+## Verification and Iteration Loop
+Because manufacturer manuals frequently contain lies, typos, or omitted details, static verification is not enough. You must physically verify the fixture.
+1. **Load into QLC+:** Copy the exported `.qxf` to your QLC+ user fixtures directory and patch it in QLC+ v5.
+2. **Physical Testing:** Use the "Simple Desk" or virtual sliders in QLC+ to manually sweep through the 0-255 ranges for each channel. Observe the physical light to ensure the manual's claims match reality (especially for macro channels, strobe speeds, and pan/tilt degrees).
+3. **Iterate:** If the physical light behaves differently than the manual states, **NEVER** edit the exported `.qxf` file directly. Instead:
+   - Update the original `.json` in `tools/ofl/fixtures/`.
+   - Re-run the validation script.
+   - Re-export the `.qxf`.
+   - Reload the fixture in QLC+.
+
 ## Conventions
 - Proactively update this `AGENTS.md` file to automatically capture any new project details, context, or rules provided by the user.
 - Rely on the original markdown and PDF manuals in the `manuals/` directory for fixture DMX channel mappings and descriptions.
