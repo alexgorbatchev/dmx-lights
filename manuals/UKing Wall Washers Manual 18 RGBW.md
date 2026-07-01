@@ -1,5 +1,7 @@
 # 18 RGBW Wall Washers
 
+![18 RGBW Wall Washers](./UKing%2018%20RGBW%20Wall%20Washers.png)
+
 User Manual
 
 In order to help you become more proficient in using the device faster, please read

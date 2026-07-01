@@ -1,4 +1,7 @@
 # LED Mini Moving Light
+
+![LED Mini Moving Light](./LED%20Mini%20Moving%20Light.png)
+
 ## User Manual
 
 **FC UK CA CE RoHS**

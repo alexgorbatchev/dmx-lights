@@ -1,4 +1,7 @@
 # Armor Plus Bee Beam Moving Head Light
+
+![Armor Plug Bee Beam Manual](./Armor%20Plug%20Bee%20Beam%20Manual.png)
+
 ## Product Manual
 
 **CE FCC**
