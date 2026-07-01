@@ -17,6 +17,7 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
     ```
     *(Note: Setting the value to `16` in the plist corresponds to the internal `MAX_MIDI_CHANNELS` enum, which triggers OMNI mode).*
   - **Profile:** Use the built-in "M-Wave SMC Mixer" input profile in QLC+ (which correctly maps the Pitch Wheel offsets).
+  - **QLC+ Documentation Warning:** The official QLC+ documentation incorrectly states that Pitch Wheel messages are mapped to channel offset `514`. Inspecting the source code reveals the actual offset is `513`. If you ever need to manually map a Pitch Wheel fader in a custom profile, the formula for OMNI mode is `513 + (4096 * (midi_channel - 1))`. For example, Fader 2 on MIDI Channel 2 is `513 + 4096 = 4609`. Do not use `514`.
 
 ## Fixture Workflow (OFL JSON -> QLC+)
 We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to ensure mathematical correctness of DMX boundaries.
