@@ -6,6 +6,7 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 - All source materials and manufacturer documentation are located in the `manuals/` directory.
 
 ## Conventions
+- Proactively update this `AGENTS.md` file to automatically capture any new project details, context, or rules provided by the user.
 - Rely on the original markdown and PDF manuals in the `manuals/` directory for fixture DMX channel mappings and descriptions.
 - Ensure all DMX definitions perfectly match the 0-255 value ranges and channel orders specified in the manuals.
 - Name fixture definition files consistently with the manual names (e.g., `LED Mini Moving Light`).
