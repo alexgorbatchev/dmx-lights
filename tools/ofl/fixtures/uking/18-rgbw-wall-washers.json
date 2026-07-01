@@ -1,0 +1,215 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "18 RGBW Wall Washers",
+  "categories": ["Color Changer", "Effect"],
+  "meta": {
+    "authors": ["Alex"],
+    "createDate": "2024-01-01",
+    "lastModifyDate": "2024-01-01"
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Overall Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 4], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [5, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "Red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "Auxiliary Light White Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Auxiliary Light Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 4], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [5, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    
+    "RGBW Built-in Effects": {
+      "capabilities": [
+        { "dmxRange": [0, 2], "type": "NoFunction" },
+        { "dmxRange": [3, 210], "type": "Effect", "effectName": "Built-in effects (every 7 values an effect)" },
+        { "dmxRange": [211, 255], "type": "Effect", "effectName": "Sound Control Effect", "soundControlled": true }
+      ]
+    },
+    "RGBW Effect Speed": {
+      "capabilities": [
+        { "dmxRange": [0, 127], "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast", "comment": "Forward" },
+        { "dmxRange": [128, 255], "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast", "comment": "Reverse" }
+      ]
+    },
+    
+    "Auxiliary Light Effect": {
+      "capabilities": [
+        { "dmxRange": [0, 3], "type": "NoFunction" },
+        { "dmxRange": [4, 255], "type": "Effect", "effectName": "White Auxiliary light effect" }
+      ]
+    },
+    "Auxiliary Light Effect Speed": {
+      "capabilities": [
+        { "dmxRange": [0, 127], "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast", "comment": "Forward" },
+        { "dmxRange": [128, 255], "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast", "comment": "Reverse" }
+      ]
+    },
+    
+    "RGBW Background Color": { "capability": { "type": "ColorPreset", "colors": ["#000000"] } },
+    "RGBW Background Tone Light": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "RGBW1 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW2 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW3 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW4 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW5 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "RGBW6 Dimming": { "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "White1 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White2 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White3 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White4 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White5 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White6 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White7 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White8 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White9 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White10 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White11 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White12 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "White13 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R1": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G1": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B1": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W1": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R2": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G2": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B2": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W2": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R3": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G3": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B3": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W3": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R4": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G4": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B4": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W4": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R5": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G5": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B5": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W5": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "R6": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G6": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B6": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W6": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } }
+  },
+  "modes": [
+    {
+      "name": "5 Channel",
+      "shortName": "5ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Auxiliary Light White Dimming"
+      ]
+    },
+    {
+      "name": "14 Channel",
+      "shortName": "14ch",
+      "channels": [
+        "Overall Dimming",
+        "RGBW Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "RGBW Built-in Effects",
+        "RGBW Effect Speed",
+        "Auxiliary Light Strobe",
+        "Auxiliary Light White Dimming",
+        "Auxiliary Light Effect",
+        "Auxiliary Light Effect Speed",
+        "RGBW Background Color",
+        "RGBW Background Tone Light"
+      ]
+    },
+    {
+      "name": "33 Channel",
+      "shortName": "33ch",
+      "channels": [
+        "Overall Dimming",
+        "RGBW Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "RGBW1 Dimming",
+        "RGBW2 Dimming",
+        "RGBW3 Dimming",
+        "RGBW4 Dimming",
+        "RGBW5 Dimming",
+        "RGBW6 Dimming",
+        "RGBW Built-in Effects",
+        "RGBW Effect Speed",
+        "Auxiliary Light Strobe",
+        "Auxiliary Light White Dimming",
+        "White1 Auxiliary Light Dimming",
+        "White2 Auxiliary Light Dimming",
+        "White3 Auxiliary Light Dimming",
+        "White4 Auxiliary Light Dimming",
+        "White5 Auxiliary Light Dimming",
+        "White6 Auxiliary Light Dimming",
+        "White7 Auxiliary Light Dimming",
+        "White8 Auxiliary Light Dimming",
+        "White9 Auxiliary Light Dimming",
+        "White10 Auxiliary Light Dimming",
+        "White11 Auxiliary Light Dimming",
+        "White12 Auxiliary Light Dimming",
+        "White13 Auxiliary Light Dimming",
+        "Auxiliary Light Effect",
+        "Auxiliary Light Effect Speed",
+        "RGBW Background Color",
+        "RGBW Background Tone Light"
+      ]
+    },
+    {
+      "name": "37 Channel",
+      "shortName": "37ch",
+      "channels": [
+        "R1", "G1", "B1", "W1",
+        "R2", "G2", "B2", "W2",
+        "R3", "G3", "B3", "W3",
+        "R4", "G4", "B4", "W4",
+        "R5", "G5", "B5", "W5",
+        "R6", "G6", "B6", "W6",
+        "White1 Auxiliary Light Dimming",
+        "White2 Auxiliary Light Dimming",
+        "White3 Auxiliary Light Dimming",
+        "White4 Auxiliary Light Dimming",
+        "White5 Auxiliary Light Dimming",
+        "White6 Auxiliary Light Dimming",
+        "White7 Auxiliary Light Dimming",
+        "White8 Auxiliary Light Dimming",
+        "White9 Auxiliary Light Dimming",
+        "White10 Auxiliary Light Dimming",
+        "White11 Auxiliary Light Dimming",
+        "White12 Auxiliary Light Dimming",
+        "White13 Auxiliary Light Dimming"
+      ]
+    }
+  ]
+}

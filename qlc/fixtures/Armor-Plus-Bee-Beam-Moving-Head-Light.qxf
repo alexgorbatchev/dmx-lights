@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>OFL – https://open-fixture-library.org/armor/plus-bee-beam-moving-head</Name>
+  <Version>1.3.2</Version>
+  <Author>Alex</Author>
+ </Creator>
+ <Manufacturer>Armor</Manufacturer>
+ <Model>Plus Bee Beam Moving Head Light</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="X Motor" Preset="PositionPan"/>
+ <Channel Name="X Motor Speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="X Motor Slip ring">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="127" Preset="RotationClockwiseSlowToFast">Pan CW slow…fast</Capability>
+  <Capability Min="128" Max="255" Preset="RotationCounterClockwiseFastToSlow">Pan CCW fast…slow</Capability>
+ </Channel>
+ <Channel Name="Bee eyes rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="128" Preset="RotationIndexed">Rotation 0…180°</Capability>
+  <Capability Min="129" Max="191" Preset="RotationClockwiseSlowToFast">Rotation CW slow…fast</Capability>
+  <Capability Min="192" Max="255" Preset="RotationCounterClockwiseSlowToFast">Rotation CCW slow…fast</Capability>
+ </Channel>
+ <Channel Name="Y-axis 1" Preset="PositionTilt"/>
+ <Channel Name="Y-axis 2" Preset="PositionTilt"/>
+ <Channel Name="Y-axis 3" Preset="PositionTilt"/>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="STROB">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="Beam-red" Preset="IntensityRed"/>
+ <Channel Name="Beam-green" Preset="IntensityGreen"/>
+ <Channel Name="Beam-blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam-white" Preset="IntensityWhite"/>
+ <Channel Name="Bee-red" Preset="IntensityRed"/>
+ <Channel Name="Bee-green" Preset="IntensityGreen"/>
+ <Channel Name="Bee-blue" Preset="IntensityBlue"/>
+ <Channel Name="Bee-white" Preset="IntensityWhite"/>
+ <Channel Name="Red Laser" Preset="IntensityRed"/>
+ <Channel Name="Green Laser" Preset="IntensityGreen"/>
+ <Channel Name="STROB1">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="STROB2">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="Light Belt">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="255">Change effect every 10 seconds</Capability>
+ </Channel>
+ <Channel Name="Light Belt Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="SlowToFast">Effect speed slow…fast</Capability>
+ </Channel>
+ <Channel Name="Macro function 24ch">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">Channel 1 to Channel 23 Active</Capability>
+  <Capability Min="51" Max="150">Auto run</Capability>
+  <Capability Min="151" Max="250">Voice mode</Capability>
+  <Capability Min="251" Max="255" Preset="ResetAll">3 second reset (hold 3s)</Capability>
+ </Channel>
+ <Channel Name="Beam1-Red" Preset="IntensityRed"/>
+ <Channel Name="Beam1-Green" Preset="IntensityGreen"/>
+ <Channel Name="Beam1-Blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam1-White" Preset="IntensityWhite"/>
+ <Channel Name="Beam2-Red" Preset="IntensityRed"/>
+ <Channel Name="Beam2-Green" Preset="IntensityGreen"/>
+ <Channel Name="Beam2-Blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam2-White" Preset="IntensityWhite"/>
+ <Channel Name="Beam3-Red" Preset="IntensityRed"/>
+ <Channel Name="Beam3-Green" Preset="IntensityGreen"/>
+ <Channel Name="Beam3-Blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam3-White" Preset="IntensityWhite"/>
+ <Channel Name="Bee4-Red" Preset="IntensityRed"/>
+ <Channel Name="Bee4-Green" Preset="IntensityGreen"/>
+ <Channel Name="Bee4-Blue" Preset="IntensityBlue"/>
+ <Channel Name="Bee4-White" Preset="IntensityWhite"/>
+ <Channel Name="Yellow Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast (Yellow Strobe)</Capability>
+ </Channel>
+ <Channel Name="White Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast (White Strobe)</Capability>
+ </Channel>
+ <Channel Name="Macro function 32ch">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">Channel 1 to Channel 31 Active</Capability>
+  <Capability Min="51" Max="149">Auto run</Capability>
+  <Capability Min="150" Max="250">Voice mode</Capability>
+  <Capability Min="251" Max="255" Preset="ResetAll">3 second reset (hold 3s)</Capability>
+ </Channel>
+ <Mode Name="24 Channel">
+  <Channel Number="0">X Motor</Channel>
+  <Channel Number="1">X Motor Speed</Channel>
+  <Channel Number="2">X Motor Slip ring</Channel>
+  <Channel Number="3">Bee eyes rotation</Channel>
+  <Channel Number="4">Y-axis 1</Channel>
+  <Channel Number="5">Y-axis 2</Channel>
+  <Channel Number="6">Y-axis 3</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">STROB</Channel>
+  <Channel Number="9">Beam-red</Channel>
+  <Channel Number="10">Beam-green</Channel>
+  <Channel Number="11">Beam-blue</Channel>
+  <Channel Number="12">Beam-white</Channel>
+  <Channel Number="13">Bee-red</Channel>
+  <Channel Number="14">Bee-green</Channel>
+  <Channel Number="15">Bee-blue</Channel>
+  <Channel Number="16">Bee-white</Channel>
+  <Channel Number="17">Red Laser</Channel>
+  <Channel Number="18">Green Laser</Channel>
+  <Channel Number="19">STROB1</Channel>
+  <Channel Number="20">STROB2</Channel>
+  <Channel Number="21">Light Belt</Channel>
+  <Channel Number="22">Light Belt Speed</Channel>
+  <Channel Number="23">Macro function 24ch</Channel>
+ </Mode>
+ <Mode Name="32 Channel">
+  <Channel Number="0">X Motor</Channel>
+  <Channel Number="1">X Motor Speed</Channel>
+  <Channel Number="2">X Motor Slip ring</Channel>
+  <Channel Number="3">Bee eyes rotation</Channel>
+  <Channel Number="4">Y-axis 1</Channel>
+  <Channel Number="5">Y-axis 2</Channel>
+  <Channel Number="6">Y-axis 3</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">STROB</Channel>
+  <Channel Number="9">Beam1-Red</Channel>
+  <Channel Number="10">Beam1-Green</Channel>
+  <Channel Number="11">Beam1-Blue</Channel>
+  <Channel Number="12">Beam1-White</Channel>
+  <Channel Number="13">Beam2-Red</Channel>
+  <Channel Number="14">Beam2-Green</Channel>
+  <Channel Number="15">Beam2-Blue</Channel>
+  <Channel Number="16">Beam2-White</Channel>
+  <Channel Number="17">Beam3-Red</Channel>
+  <Channel Number="18">Beam3-Green</Channel>
+  <Channel Number="19">Beam3-Blue</Channel>
+  <Channel Number="20">Beam3-White</Channel>
+  <Channel Number="21">Bee4-Red</Channel>
+  <Channel Number="22">Bee4-Green</Channel>
+  <Channel Number="23">Bee4-Blue</Channel>
+  <Channel Number="24">Bee4-White</Channel>
+  <Channel Number="25">Red Laser</Channel>
+  <Channel Number="26">Green Laser</Channel>
+  <Channel Number="27">Yellow Strobe</Channel>
+  <Channel Number="28">White Strobe</Channel>
+  <Channel Number="29">Light Belt</Channel>
+  <Channel Number="30">Light Belt Speed</Channel>
+  <Channel Number="31">Macro function 32ch</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="90"/>
+  <Technical DmxConnector="3-pin" PowerConsumption="0"/>
+ </Physical>
+</FixtureDefinition>

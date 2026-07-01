@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>OFL – https://open-fixture-library.org/generic/led-mini-moving-light</Name>
+  <Version>1.3.2</Version>
+  <Author>Alex</Author>
+ </Creator>
+ <Manufacturer>Generic</Manufacturer>
+ <Model>LED Mini Moving Light</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan Speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Bee Eye Rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="127" Preset="RotationIndexed">Rotation 0…90°</Capability>
+  <Capability Min="128" Max="191" Preset="RotationClockwiseSlowToFast">Rotation CW slow…fast</Capability>
+  <Capability Min="192" Max="255" Preset="RotationCounterClockwiseSlowToFast">Rotation CCW slow…fast</Capability>
+ </Channel>
+ <Channel Name="Beam 1 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Beam 2 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Beam 3 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Beam 4 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Beam 5 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Beam 6 Tilt" Preset="PositionTilt"/>
+ <Channel Name="Master Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="10" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast (Bee eye and beam strobe)</Capability>
+ </Channel>
+ <Channel Name="Bee Eye Red" Preset="IntensityRed"/>
+ <Channel Name="Bee Eye Green" Preset="IntensityGreen"/>
+ <Channel Name="Bee Eye Blue" Preset="IntensityBlue"/>
+ <Channel Name="Bee Eye White" Preset="IntensityWhite"/>
+ <Channel Name="Beam Red" Preset="IntensityRed"/>
+ <Channel Name="Beam Green" Preset="IntensityGreen"/>
+ <Channel Name="Beam Blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam White" Preset="IntensityWhite"/>
+ <Channel Name="Laser Red" Preset="IntensityRed"/>
+ <Channel Name="Laser Green" Preset="IntensityGreen"/>
+ <Channel Name="White Light Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="10" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="Golden Light Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="10" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="Light Strip Macro">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="12">No function</Capability>
+  <Capability Min="13" Max="21" Preset="ColorMacro" Res1="#ff0000">Color preset</Capability>
+  <Capability Min="22" Max="30" Preset="ColorMacro" Res1="#00ff00">Color preset</Capability>
+  <Capability Min="31" Max="39" Preset="ColorMacro" Res1="#0000ff">Color preset</Capability>
+  <Capability Min="40" Max="48" Preset="ColorMacro" Res1="#ffff00">Color preset</Capability>
+  <Capability Min="49" Max="57" Preset="ColorMacro" Res1="#ff00ff">Color preset</Capability>
+  <Capability Min="58" Max="66" Preset="ColorMacro" Res1="#00ffff">Color preset</Capability>
+  <Capability Min="67" Max="75" Preset="ColorMacro" Res1="#ffffff">Color preset</Capability>
+  <Capability Min="76" Max="255">31 kinds of light strip water effects</Capability>
+ </Channel>
+ <Channel Name="Light Strip Macro Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="SlowToFast">Effect speed slow…fast</Capability>
+ </Channel>
+ <Channel Name="Macro Function Control">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">No function</Capability>
+  <Capability Min="51" Max="150">Random walk</Capability>
+  <Capability Min="151" Max="250">Voice-controlled self-propelled</Capability>
+  <Capability Min="251" Max="255" Preset="ResetAll">3 seconds reset (hold 3s)</Capability>
+ </Channel>
+ <Mode Name="26 Channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Speed</Channel>
+  <Channel Number="2">Bee Eye Rotation</Channel>
+  <Channel Number="3">Beam 1 Tilt</Channel>
+  <Channel Number="4">Beam 2 Tilt</Channel>
+  <Channel Number="5">Beam 3 Tilt</Channel>
+  <Channel Number="6">Beam 4 Tilt</Channel>
+  <Channel Number="7">Beam 5 Tilt</Channel>
+  <Channel Number="8">Beam 6 Tilt</Channel>
+  <Channel Number="9">Master Dimmer</Channel>
+  <Channel Number="10">Strobe</Channel>
+  <Channel Number="11">Bee Eye Red</Channel>
+  <Channel Number="12">Bee Eye Green</Channel>
+  <Channel Number="13">Bee Eye Blue</Channel>
+  <Channel Number="14">Bee Eye White</Channel>
+  <Channel Number="15">Beam Red</Channel>
+  <Channel Number="16">Beam Green</Channel>
+  <Channel Number="17">Beam Blue</Channel>
+  <Channel Number="18">Beam White</Channel>
+  <Channel Number="19">Laser Red</Channel>
+  <Channel Number="20">Laser Green</Channel>
+  <Channel Number="21">White Light Strobe</Channel>
+  <Channel Number="22">Golden Light Strobe</Channel>
+  <Channel Number="23">Light Strip Macro</Channel>
+  <Channel Number="24">Light Strip Macro Speed</Channel>
+  <Channel Number="25">Macro Function Control</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="90"/>
+  <Technical DmxConnector="3-pin" PowerConsumption="0"/>
+ </Physical>
+</FixtureDefinition>

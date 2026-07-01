@@ -1,0 +1,181 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Mini Moving Light",
+  "categories": ["Moving Head", "Color Changer", "Effect"],
+  "meta": {
+    "authors": ["Alex"],
+    "createDate": "2024-01-01",
+    "lastModifyDate": "2024-01-01"
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Pan Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Bee Eye Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Rotation",
+          "angleStart": "0deg",
+          "angleEnd": "90deg"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW"
+        }
+      ]
+    },
+    "Beam 1 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Beam 2 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Beam 3 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Beam 4 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Beam 5 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Beam 6 Tilt": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Master Dimmer": {
+      "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 9], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [10, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast", "comment": "Bee eye and beam strobe" }
+      ]
+    },
+    "Bee Eye Red": {
+      "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Bee Eye Green": {
+      "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Bee Eye Blue": {
+      "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Bee Eye White": {
+      "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Beam Red": {
+      "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Beam Green": {
+      "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Beam Blue": {
+      "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Beam White": {
+      "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Laser Red": {
+      "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "Laser Green": {
+      "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "White Light Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 9], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [10, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "Golden Light Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 9], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [10, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "Light Strip Macro": {
+      "capabilities": [
+        { "dmxRange": [0, 12], "type": "NoFunction" },
+        { "dmxRange": [13, 21], "type": "ColorPreset", "colors": ["#ff0000"] },
+        { "dmxRange": [22, 30], "type": "ColorPreset", "colors": ["#00ff00"] },
+        { "dmxRange": [31, 39], "type": "ColorPreset", "colors": ["#0000ff"] },
+        { "dmxRange": [40, 48], "type": "ColorPreset", "colors": ["#ffff00"] },
+        { "dmxRange": [49, 57], "type": "ColorPreset", "colors": ["#ff00ff"] },
+        { "dmxRange": [58, 66], "type": "ColorPreset", "colors": ["#00ffff"] },
+        { "dmxRange": [67, 75], "type": "ColorPreset", "colors": ["#ffffff"] },
+        { "dmxRange": [76, 255], "type": "Effect", "effectName": "31 kinds of light strip water effects" }
+      ]
+    },
+    "Light Strip Macro Speed": {
+      "capability": { "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast" }
+    },
+    "Macro Function Control": {
+      "capabilities": [
+        { "dmxRange": [0, 50], "type": "NoFunction" },
+        { "dmxRange": [51, 150], "type": "Effect", "effectName": "Random walk" },
+        { "dmxRange": [151, 250], "type": "Effect", "effectName": "Voice-controlled self-propelled", "soundControlled": true },
+        { "dmxRange": [251, 255], "type": "Maintenance", "comment": "3 seconds reset", "hold": "3s" }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "26 Channel",
+      "shortName": "26ch",
+      "channels": [
+        "Pan",
+        "Pan Speed",
+        "Bee Eye Rotation",
+        "Beam 1 Tilt",
+        "Beam 2 Tilt",
+        "Beam 3 Tilt",
+        "Beam 4 Tilt",
+        "Beam 5 Tilt",
+        "Beam 6 Tilt",
+        "Master Dimmer",
+        "Strobe",
+        "Bee Eye Red",
+        "Bee Eye Green",
+        "Bee Eye Blue",
+        "Bee Eye White",
+        "Beam Red",
+        "Beam Green",
+        "Beam Blue",
+        "Beam White",
+        "Laser Red",
+        "Laser Green",
+        "White Light Strobe",
+        "Golden Light Strobe",
+        "Light Strip Macro",
+        "Light Strip Macro Speed",
+        "Macro Function Control"
+      ]
+    }
+  ]
+}

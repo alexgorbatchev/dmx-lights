@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Plus Bee Beam Moving Head Light",
+  "categories": ["Moving Head", "Color Changer", "Effect"],
+  "meta": {
+    "authors": ["Alex"],
+    "createDate": "2024-01-01",
+    "lastModifyDate": "2024-01-01"
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "X Motor": {
+      "capability": { "type": "Pan", "angleStart": "0deg", "angleEnd": "540deg" }
+    },
+    "X Motor Speed": {
+      "capability": { "type": "PanTiltSpeed", "speedStart": "fast", "speedEnd": "slow" }
+    },
+    "X Motor Slip ring": {
+      "capabilities": [
+        { "dmxRange": [0, 9], "type": "NoFunction" },
+        { "dmxRange": [10, 127], "type": "PanContinuous", "speedStart": "slow CW", "speedEnd": "fast CW" },
+        { "dmxRange": [128, 255], "type": "PanContinuous", "speedStart": "fast CCW", "speedEnd": "slow CCW" }
+      ]
+    },
+    "Bee eyes rotation": {
+      "capabilities": [
+        { "dmxRange": [0, 128], "type": "Rotation", "angleStart": "0deg", "angleEnd": "180deg" },
+        { "dmxRange": [129, 191], "type": "Rotation", "speedStart": "slow CW", "speedEnd": "fast CW" },
+        { "dmxRange": [192, 255], "type": "Rotation", "speedStart": "slow CCW", "speedEnd": "fast CCW" }
+      ]
+    },
+    "Y-axis 1": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Y-axis 2": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Y-axis 3": {
+      "capability": { "type": "Tilt", "angleStart": "0deg", "angleEnd": "90deg" }
+    },
+    "Dimmer": {
+      "capability": { "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%" }
+    },
+    "STROB": {
+      "capabilities": [
+        { "dmxRange": [0, 10], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [11, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "Beam-red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam-green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam-blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam-white": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee-red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee-green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee-blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee-white": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "Red Laser": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Green Laser": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    
+    "STROB1": {
+      "capabilities": [
+        { "dmxRange": [0, 10], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [11, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "STROB2": {
+      "capabilities": [
+        { "dmxRange": [0, 10], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [11, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" }
+      ]
+    },
+    "Light Belt": {
+      "capabilities": [
+        { "dmxRange": [0, 9], "type": "NoFunction" },
+        { "dmxRange": [10, 255], "type": "Effect", "effectName": "Change effect every 10 seconds" }
+      ]
+    },
+    "Light Belt Speed": {
+      "capability": { "type": "EffectSpeed", "speedStart": "slow", "speedEnd": "fast" }
+    },
+    "Macro function 24ch": {
+      "capabilities": [
+        { "dmxRange": [0, 50], "type": "Effect", "effectName": "Channel 1 to Channel 23 Active" },
+        { "dmxRange": [51, 150], "type": "Effect", "effectName": "Auto run" },
+        { "dmxRange": [151, 250], "type": "Effect", "effectName": "Voice mode", "soundControlled": true },
+        { "dmxRange": [251, 255], "type": "Maintenance", "comment": "3 second reset", "hold": "3s" }
+      ]
+    },
+
+    "Beam1-Red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam1-Green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam1-Blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam1-White": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam2-Red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam2-Green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam2-Blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam2-White": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam3-Red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam3-Green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam3-Blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Beam3-White": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee4-Red": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee4-Green": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee4-Blue": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "Bee4-White": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+
+    "Yellow Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 10], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [11, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast", "comment": "Yellow Strobe" }
+      ]
+    },
+    "White Strobe": {
+      "capabilities": [
+        { "dmxRange": [0, 10], "type": "ShutterStrobe", "shutterEffect": "Open" },
+        { "dmxRange": [11, 255], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast", "comment": "White Strobe" }
+      ]
+    },
+    "Macro function 32ch": {
+      "capabilities": [
+        { "dmxRange": [0, 50], "type": "Effect", "effectName": "Channel 1 to Channel 31 Active" },
+        { "dmxRange": [51, 149], "type": "Effect", "effectName": "Auto run" },
+        { "dmxRange": [150, 250], "type": "Effect", "effectName": "Voice mode", "soundControlled": true },
+        { "dmxRange": [251, 255], "type": "Maintenance", "comment": "3 second reset", "hold": "3s" }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "24 Channel",
+      "shortName": "24ch",
+      "channels": [
+        "X Motor",
+        "X Motor Speed",
+        "X Motor Slip ring",
+        "Bee eyes rotation",
+        "Y-axis 1",
+        "Y-axis 2",
+        "Y-axis 3",
+        "Dimmer",
+        "STROB",
+        "Beam-red",
+        "Beam-green",
+        "Beam-blue",
+        "Beam-white",
+        "Bee-red",
+        "Bee-green",
+        "Bee-blue",
+        "Bee-white",
+        "Red Laser",
+        "Green Laser",
+        "STROB1",
+        "STROB2",
+        "Light Belt",
+        "Light Belt Speed",
+        "Macro function 24ch"
+      ]
+    },
+    {
+      "name": "32 Channel",
+      "shortName": "32ch",
+      "channels": [
+        "X Motor",
+        "X Motor Speed",
+        "X Motor Slip ring",
+        "Bee eyes rotation",
+        "Y-axis 1",
+        "Y-axis 2",
+        "Y-axis 3",
+        "Dimmer",
+        "STROB",
+        "Beam1-Red",
+        "Beam1-Green",
+        "Beam1-Blue",
+        "Beam1-White",
+        "Beam2-Red",
+        "Beam2-Green",
+        "Beam2-Blue",
+        "Beam2-White",
+        "Beam3-Red",
+        "Beam3-Green",
+        "Beam3-Blue",
+        "Beam3-White",
+        "Bee4-Red",
+        "Bee4-Green",
+        "Bee4-Blue",
+        "Bee4-White",
+        "Red Laser",
+        "Green Laser",
+        "Yellow Strobe",
+        "White Strobe",
+        "Light Belt",
+        "Light Belt Speed",
+        "Macro function 32ch"
+      ]
+    }
+  ]
+}

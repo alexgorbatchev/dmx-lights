@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>OFL – https://open-fixture-library.org/uking/18-rgbw-wall-washers</Name>
+  <Version>1.3.2</Version>
+  <Author>Alex</Author>
+ </Creator>
+ <Manufacturer>U`King</Manufacturer>
+ <Model>18 RGBW Wall Washers</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Overall Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="4" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="5" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Auxiliary Light White Dimming" Preset="IntensityWhite"/>
+ <Channel Name="Auxiliary Light Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="4" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="5" Max="255" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
+ </Channel>
+ <Channel Name="RGBW Built-in Effects">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="2">No function</Capability>
+  <Capability Min="3" Max="210">Built-in effects (every 7 values an effect)</Capability>
+  <Capability Min="211" Max="255">Sound Control Effect</Capability>
+ </Channel>
+ <Channel Name="RGBW Effect Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="127" Preset="SlowToFast">Effect speed slow…fast (Forward)</Capability>
+  <Capability Min="128" Max="255" Preset="SlowToFast">Effect speed slow…fast (Reverse)</Capability>
+ </Channel>
+ <Channel Name="Auxiliary Light Effect">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="3">No function</Capability>
+  <Capability Min="4" Max="255">White Auxiliary light effect</Capability>
+ </Channel>
+ <Channel Name="Auxiliary Light Effect Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="127" Preset="SlowToFast">Effect speed slow…fast (Forward)</Capability>
+  <Capability Min="128" Max="255" Preset="SlowToFast">Effect speed slow…fast (Reverse)</Capability>
+ </Channel>
+ <Channel Name="RGBW Background Color" Preset="ColorMacro"/>
+ <Channel Name="RGBW Background Tone Light" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW1 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW2 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW3 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW4 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW5 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW6 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="White1 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White2 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White3 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White4 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White5 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White6 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White7 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White8 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White9 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White10 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White11 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White12 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="White13 Auxiliary Light Dimming" Preset="IntensityWhite"/>
+ <Channel Name="R1" Preset="IntensityRed"/>
+ <Channel Name="G1" Preset="IntensityGreen"/>
+ <Channel Name="B1" Preset="IntensityBlue"/>
+ <Channel Name="W1" Preset="IntensityWhite"/>
+ <Channel Name="R2" Preset="IntensityRed"/>
+ <Channel Name="G2" Preset="IntensityGreen"/>
+ <Channel Name="B2" Preset="IntensityBlue"/>
+ <Channel Name="W2" Preset="IntensityWhite"/>
+ <Channel Name="R3" Preset="IntensityRed"/>
+ <Channel Name="G3" Preset="IntensityGreen"/>
+ <Channel Name="B3" Preset="IntensityBlue"/>
+ <Channel Name="W3" Preset="IntensityWhite"/>
+ <Channel Name="R4" Preset="IntensityRed"/>
+ <Channel Name="G4" Preset="IntensityGreen"/>
+ <Channel Name="B4" Preset="IntensityBlue"/>
+ <Channel Name="W4" Preset="IntensityWhite"/>
+ <Channel Name="R5" Preset="IntensityRed"/>
+ <Channel Name="G5" Preset="IntensityGreen"/>
+ <Channel Name="B5" Preset="IntensityBlue"/>
+ <Channel Name="W5" Preset="IntensityWhite"/>
+ <Channel Name="R6" Preset="IntensityRed"/>
+ <Channel Name="G6" Preset="IntensityGreen"/>
+ <Channel Name="B6" Preset="IntensityBlue"/>
+ <Channel Name="W6" Preset="IntensityWhite"/>
+ <Mode Name="5 Channel">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">White</Channel>
+  <Channel Number="4">Auxiliary Light White Dimming</Channel>
+ </Mode>
+ <Mode Name="14 Channel">
+  <Channel Number="0">Overall Dimming</Channel>
+  <Channel Number="1">RGBW Strobe</Channel>
+  <Channel Number="2">Red</Channel>
+  <Channel Number="3">Green</Channel>
+  <Channel Number="4">Blue</Channel>
+  <Channel Number="5">White</Channel>
+  <Channel Number="6">RGBW Built-in Effects</Channel>
+  <Channel Number="7">RGBW Effect Speed</Channel>
+  <Channel Number="8">Auxiliary Light Strobe</Channel>
+  <Channel Number="9">Auxiliary Light White Dimming</Channel>
+  <Channel Number="10">Auxiliary Light Effect</Channel>
+  <Channel Number="11">Auxiliary Light Effect Speed</Channel>
+  <Channel Number="12">RGBW Background Color</Channel>
+  <Channel Number="13">RGBW Background Tone Light</Channel>
+ </Mode>
+ <Mode Name="33 Channel">
+  <Channel Number="0">Overall Dimming</Channel>
+  <Channel Number="1">RGBW Strobe</Channel>
+  <Channel Number="2">Red</Channel>
+  <Channel Number="3">Green</Channel>
+  <Channel Number="4">Blue</Channel>
+  <Channel Number="5">White</Channel>
+  <Channel Number="6">RGBW1 Dimming</Channel>
+  <Channel Number="7">RGBW2 Dimming</Channel>
+  <Channel Number="8">RGBW3 Dimming</Channel>
+  <Channel Number="9">RGBW4 Dimming</Channel>
+  <Channel Number="10">RGBW5 Dimming</Channel>
+  <Channel Number="11">RGBW6 Dimming</Channel>
+  <Channel Number="12">RGBW Built-in Effects</Channel>
+  <Channel Number="13">RGBW Effect Speed</Channel>
+  <Channel Number="14">Auxiliary Light Strobe</Channel>
+  <Channel Number="15">Auxiliary Light White Dimming</Channel>
+  <Channel Number="16">White1 Auxiliary Light Dimming</Channel>
+  <Channel Number="17">White2 Auxiliary Light Dimming</Channel>
+  <Channel Number="18">White3 Auxiliary Light Dimming</Channel>
+  <Channel Number="19">White4 Auxiliary Light Dimming</Channel>
+  <Channel Number="20">White5 Auxiliary Light Dimming</Channel>
+  <Channel Number="21">White6 Auxiliary Light Dimming</Channel>
+  <Channel Number="22">White7 Auxiliary Light Dimming</Channel>
+  <Channel Number="23">White8 Auxiliary Light Dimming</Channel>
+  <Channel Number="24">White9 Auxiliary Light Dimming</Channel>
+  <Channel Number="25">White10 Auxiliary Light Dimming</Channel>
+  <Channel Number="26">White11 Auxiliary Light Dimming</Channel>
+  <Channel Number="27">White12 Auxiliary Light Dimming</Channel>
+  <Channel Number="28">White13 Auxiliary Light Dimming</Channel>
+  <Channel Number="29">Auxiliary Light Effect</Channel>
+  <Channel Number="30">Auxiliary Light Effect Speed</Channel>
+  <Channel Number="31">RGBW Background Color</Channel>
+  <Channel Number="32">RGBW Background Tone Light</Channel>
+ </Mode>
+ <Mode Name="37 Channel">
+  <Channel Number="0">R1</Channel>
+  <Channel Number="1">G1</Channel>
+  <Channel Number="2">B1</Channel>
+  <Channel Number="3">W1</Channel>
+  <Channel Number="4">R2</Channel>
+  <Channel Number="5">G2</Channel>
+  <Channel Number="6">B2</Channel>
+  <Channel Number="7">W2</Channel>
+  <Channel Number="8">R3</Channel>
+  <Channel Number="9">G3</Channel>
+  <Channel Number="10">B3</Channel>
+  <Channel Number="11">W3</Channel>
+  <Channel Number="12">R4</Channel>
+  <Channel Number="13">G4</Channel>
+  <Channel Number="14">B4</Channel>
+  <Channel Number="15">W4</Channel>
+  <Channel Number="16">R5</Channel>
+  <Channel Number="17">G5</Channel>
+  <Channel Number="18">B5</Channel>
+  <Channel Number="19">W5</Channel>
+  <Channel Number="20">R6</Channel>
+  <Channel Number="21">G6</Channel>
+  <Channel Number="22">B6</Channel>
+  <Channel Number="23">W6</Channel>
+  <Channel Number="24">White1 Auxiliary Light Dimming</Channel>
+  <Channel Number="25">White2 Auxiliary Light Dimming</Channel>
+  <Channel Number="26">White3 Auxiliary Light Dimming</Channel>
+  <Channel Number="27">White4 Auxiliary Light Dimming</Channel>
+  <Channel Number="28">White5 Auxiliary Light Dimming</Channel>
+  <Channel Number="29">White6 Auxiliary Light Dimming</Channel>
+  <Channel Number="30">White7 Auxiliary Light Dimming</Channel>
+  <Channel Number="31">White8 Auxiliary Light Dimming</Channel>
+  <Channel Number="32">White9 Auxiliary Light Dimming</Channel>
+  <Channel Number="33">White10 Auxiliary Light Dimming</Channel>
+  <Channel Number="34">White11 Auxiliary Light Dimming</Channel>
+  <Channel Number="35">White12 Auxiliary Light Dimming</Channel>
+  <Channel Number="36">White13 Auxiliary Light Dimming</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical DmxConnector="3-pin" PowerConsumption="0"/>
+ </Physical>
+</FixtureDefinition>

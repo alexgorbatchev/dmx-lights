@@ -1,0 +1,38 @@
+{
+  "filesystem": {
+    "generic/led-mini-moving-light": {
+      "name": "LED Mini Moving Light",
+      "lastAction": "modified"
+    }
+  },
+  "manufacturers": {
+    "generic": [
+      "led-mini-moving-light"
+    ]
+  },
+  "categories": {
+    "Color Changer": [
+      "generic/led-mini-moving-light"
+    ],
+    "Effect": [
+      "generic/led-mini-moving-light"
+    ],
+    "Moving Head": [
+      "generic/led-mini-moving-light"
+    ]
+  },
+  "contributors": {
+    "Alex": {
+      "fixtures": [
+        "generic/led-mini-moving-light"
+      ]
+    }
+  },
+  "rdm": {},
+  "colors": {
+    "generic": "#52d0e0"
+  },
+  "lastUpdated": [
+    "generic/led-mini-moving-light"
+  ]
+}
