@@ -8,6 +8,20 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 - All QLC-related files and outputs must be kept strictly within the `qlc/` directory.
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
 
+## Fixture Workflow (OFL JSON -> QLC+)
+We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to ensure mathematical correctness of DMX boundaries.
+1. **Write:** Create OFL JSON files in `tools/ofl/fixtures/<manufacturer>/<fixture>.json`.
+2. **Validate:** Run the validation script to ensure schema conformity and DMX boundary correctness:
+   ```bash
+   cd tools/ofl
+   node tests/fixtures-valid.js -a
+   ```
+3. **Export:** Once valid, export the fixture to QLC+ XML (`.qxf`):
+   ```bash
+   cd tools/ofl
+   node cli/export-fixture.js -p qlcplus_4.12.2 <manufacturer>/<fixture> -o ../../qlc/
+   ```
+
 ## Conventions
 - Proactively update this `AGENTS.md` file to automatically capture any new project details, context, or rules provided by the user.
 - Rely on the original markdown and PDF manuals in the `manuals/` directory for fixture DMX channel mappings and descriptions.
