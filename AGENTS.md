@@ -24,7 +24,7 @@ We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to 
 
 ## Verification and Iteration Loop
 Because manufacturer manuals frequently contain lies, typos, or omitted details, static verification is not enough. You must physically verify the fixture.
-1. **Load into QLC+:** On macOS, QLC+ loads user fixtures directly from `~/Library/Application Support/QLC+/Fixtures/`. You can copy your `.qxf` files there:
+1. **Load into QLC+:** On macOS, QLC+ loads user fixtures directly from `~/Library/Application Support/QLC+/Fixtures/`. **Agents MUST automatically copy `.qxf` files there after every export without waiting for a user prompt:**
    ```bash
    cp qlc/fixtures/*.qxf ~/Library/Application\ Support/QLC+/Fixtures/
    ```
