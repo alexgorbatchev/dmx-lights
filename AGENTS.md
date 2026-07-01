@@ -24,7 +24,11 @@ We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to 
 
 ## Verification and Iteration Loop
 Because manufacturer manuals frequently contain lies, typos, or omitted details, static verification is not enough. You must physically verify the fixture.
-1. **Load into QLC+:** Copy the exported `.qxf` to your QLC+ user fixtures directory and patch it in QLC+ v5.
+1. **Load into QLC+:** On macOS, QLC+ loads user fixtures directly from `~/Library/Application Support/QLC+/Fixtures/`. You can copy your `.qxf` files there:
+   ```bash
+   cp qlc/fixtures/*.qxf ~/Library/Application\ Support/QLC+/Fixtures/
+   ```
+   Restart QLC+, and they will automatically appear under the manufacturer "Alex" when you add a fixture.
 2. **Physical Testing:** Use the "Simple Desk" or virtual sliders in QLC+ to manually sweep through the 0-255 ranges for each channel. Observe the physical light to ensure the manual's claims match reality (especially for macro channels, strobe speeds, and pan/tilt degrees).
 3. **Iterate:** If the physical light behaves differently than the manual states, **NEVER** edit the exported `.qxf` file directly. Instead:
    - Update the original `.json` in `tools/ofl/fixtures/`.
