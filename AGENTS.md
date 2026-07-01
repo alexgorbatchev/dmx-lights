@@ -7,6 +7,7 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 - We target QLC+ v5 for our fixture definitions.
 - All QLC-related files and outputs must be kept strictly within the `qlc/` directory.
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
+- **MIDI Controller:** We use an M-Vave SMC Mixer. Because it sends Pitch Wheel messages for faders across multiple MIDI channels (Fader 1 on Ch 1, Fader 2 on Ch 2, etc.), **QLC+ must be configured to listen to MIDI Channels `1-16` (OMNI)**. The custom Input Profile is maintained in `qlc/inputprofiles/SMC-Mixer.qxi`.
 
 ## Fixture Workflow (OFL JSON -> QLC+)
 We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to ensure mathematical correctness of DMX boundaries.
@@ -24,9 +25,11 @@ We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to 
 
 ## Verification and Iteration Loop
 Because manufacturer manuals frequently contain lies, typos, or omitted details, static verification is not enough. You must physically verify the fixture.
-1. **Load into QLC+:** On macOS, QLC+ loads user fixtures directly from `~/Library/Application Support/QLC+/Fixtures/`. **Agents MUST automatically copy `.qxf` files there after every export without waiting for a user prompt:**
+1. **Load into QLC+:** On macOS, QLC+ loads user fixtures directly from `~/Library/Application Support/QLC+/Fixtures/` and input profiles from `~/Library/Application Support/QLC+/InputProfiles/`. **Agents MUST automatically copy `.qxf` files and `.qxi` files there after every export without waiting for a user prompt:**
    ```bash
+   mkdir -p ~/Library/Application\ Support/QLC+/Fixtures/ ~/Library/Application\ Support/QLC+/InputProfiles/
    cp qlc/fixtures/*.qxf ~/Library/Application\ Support/QLC+/Fixtures/
+   cp -f qlc/inputprofiles/*.qxi ~/Library/Application\ Support/QLC+/InputProfiles/ 2>/dev/null || true
    ```
    Restart QLC+, and they will automatically appear under the manufacturer "Alex" when you add a fixture.
 2. **Physical Testing:** Use the "Simple Desk" or virtual sliders in QLC+ to manually sweep through the 0-255 ranges for each channel. Observe the physical light to ensure the manual's claims match reality (especially for macro channels, strobe speeds, and pan/tilt degrees).

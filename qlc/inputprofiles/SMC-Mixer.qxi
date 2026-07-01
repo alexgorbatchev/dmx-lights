@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>OpenCode</Name>
+  <Author>OpenCode</Author>
+ </Creator>
+ <Manufacturer>M-Vave</Manufacturer>
+ <Model>SMC Mixer</Model>
+ <Type>MIDI</Type>
+ <Channel Number="514">
+  <Name>Fader 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4610">
+  <Name>Fader 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8706">
+  <Name>Fader 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12802">
+  <Name>Fader 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="16898">
+  <Name>Fader 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="20994">
+  <Name>Fader 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="25090">
+  <Name>Fader 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="29186">
+  <Name>Fader 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+</InputProfile>
