@@ -9,8 +9,13 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
 - **MIDI Controller:** We use an M-Vave SMC Mixer. 
   - **The Quirk:** It sends Pitch Wheel messages for its faders, but *each fader is sent on a different MIDI channel* (Fader 1 on Ch 1, Fader 2 on Ch 2, etc.).
-  - **QLC+ Setup:** QLC+ must be configured to listen to MIDI Channels `1-16` (OMNI mode) in the Input/Output tab.
-  - **How to set OMNI in QLC+ v5:** Open the MIDI configuration (gear icon). The channel selector is a number spinner. You must click the **down arrow** past `1` until it displays `1-16`. Do this for *both* the Private and Master MIDI lines, then click OK.
+  - **QLC+ Setup:** QLC+ must be configured to listen to MIDI Channels `1-16` (OMNI mode) to receive all faders.
+  - **How to set OMNI in QLC+ v5 (macOS):** The QLC+ v5 UI for MIDI configuration is bugged and does not allow selecting the OMNI range (`1-16`). You must force this configuration via the macOS terminal while QLC+ is **completely closed**:
+    ```bash
+    defaults write org.qlcplus.Q\ Light\ Controller\ Plus midiplugin.Input.SINCO.midichannel -int 16
+    defaults write org.qlcplus.Q\ Light\ Controller\ Plus midiplugin.Output.SINCO.midichannel -int 16
+    ```
+    *(Note: Setting the value to `16` in the plist corresponds to the internal `MAX_MIDI_CHANNELS` enum, which triggers OMNI mode).*
   - **Profile:** Use the built-in "M-Wave SMC Mixer" input profile in QLC+ (which correctly maps the Pitch Wheel offsets).
 
 ## Fixture Workflow (OFL JSON -> QLC+)
