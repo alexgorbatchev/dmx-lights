@@ -4,6 +4,9 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 
 ## Setup
 - All source materials and manufacturer documentation are located in the `manuals/` directory.
+- We target QLC+ v5 for our fixture definitions.
+- All QLC-related files and outputs must be kept strictly within the `qlc/` directory.
+- We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
 
 ## Conventions
 - Proactively update this `AGENTS.md` file to automatically capture any new project details, context, or rules provided by the user.
