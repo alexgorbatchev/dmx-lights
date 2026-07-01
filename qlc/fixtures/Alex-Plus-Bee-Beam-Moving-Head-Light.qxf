@@ -2,11 +2,11 @@
 <!DOCTYPE FixtureDefinition>
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
-  <Name>OFL – https://open-fixture-library.org/armor/plus-bee-beam-moving-head</Name>
+  <Name>OFL – https://open-fixture-library.org/alex/plus-bee-beam-moving-head</Name>
   <Version>1.3.2</Version>
   <Author>Alex</Author>
  </Creator>
- <Manufacturer>Armor</Manufacturer>
+ <Manufacturer>Alex</Manufacturer>
  <Model>Plus Bee Beam Moving Head Light</Model>
  <Type>Moving Head</Type>
  <Channel Name="X Motor" Preset="PositionPan"/>

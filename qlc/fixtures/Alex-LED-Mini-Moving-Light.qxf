@@ -2,11 +2,11 @@
 <!DOCTYPE FixtureDefinition>
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
-  <Name>OFL – https://open-fixture-library.org/generic/led-mini-moving-light</Name>
+  <Name>OFL – https://open-fixture-library.org/alex/led-mini-moving-light</Name>
   <Version>1.3.2</Version>
   <Author>Alex</Author>
  </Creator>
- <Manufacturer>Generic</Manufacturer>
+ <Manufacturer>Alex</Manufacturer>
  <Model>LED Mini Moving Light</Model>
  <Type>Moving Head</Type>
  <Channel Name="Pan" Preset="PositionPan"/>

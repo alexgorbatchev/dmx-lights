@@ -1,38 +1,67 @@
 {
   "filesystem": {
-    "generic/led-mini-moving-light": {
+    "alex/18-rgbw-wall-washers": {
+      "name": "18 RGBW Wall Washers",
+      "lastActionDate": "2024-01-01",
+      "lastAction": "created"
+    },
+    "alex/led-mini-moving-light": {
       "name": "LED Mini Moving Light",
-      "lastAction": "modified"
+      "lastActionDate": "2024-01-01",
+      "lastAction": "created"
+    },
+    "alex/plus-bee-beam-moving-head": {
+      "name": "Plus Bee Beam Moving Head Light",
+      "lastActionDate": "2024-01-01",
+      "lastAction": "created"
     }
   },
   "manufacturers": {
-    "generic": [
-      "led-mini-moving-light"
-    ]
+    "alex": [
+      "18-rgbw-wall-washers",
+      "led-mini-moving-light",
+      "plus-bee-beam-moving-head"
+    ],
+    "armor": [],
+    "generic": [],
+    "uking": []
   },
   "categories": {
     "Color Changer": [
-      "generic/led-mini-moving-light"
+      "alex/18-rgbw-wall-washers",
+      "alex/led-mini-moving-light",
+      "alex/plus-bee-beam-moving-head"
     ],
     "Effect": [
-      "generic/led-mini-moving-light"
+      "alex/18-rgbw-wall-washers",
+      "alex/led-mini-moving-light",
+      "alex/plus-bee-beam-moving-head"
     ],
     "Moving Head": [
-      "generic/led-mini-moving-light"
+      "alex/led-mini-moving-light",
+      "alex/plus-bee-beam-moving-head"
     ]
   },
   "contributors": {
     "Alex": {
+      "lastActionDate": "2024-01-01",
       "fixtures": [
-        "generic/led-mini-moving-light"
+        "alex/18-rgbw-wall-washers",
+        "alex/led-mini-moving-light",
+        "alex/plus-bee-beam-moving-head"
       ]
     }
   },
   "rdm": {},
   "colors": {
-    "generic": "#52d0e0"
+    "alex": "#6a5cd6",
+    "armor": "#cc3633",
+    "generic": "#52d0e0",
+    "uking": "#bfb540"
   },
   "lastUpdated": [
-    "generic/led-mini-moving-light"
+    "alex/18-rgbw-wall-washers",
+    "alex/led-mini-moving-light",
+    "alex/plus-bee-beam-moving-head"
   ]
 }
