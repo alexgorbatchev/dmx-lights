@@ -7,7 +7,7 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
 - We target QLC+ v5 for our fixture definitions.
 - All QLC-related files and outputs must be kept strictly within the `qlc/` directory.
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
-- **MIDI Controller:** We use an M-Vave SMC Mixer. Because it sends Pitch Wheel messages for faders across multiple MIDI channels (Fader 1 on Ch 1, Fader 2 on Ch 2, etc.), **QLC+ must be configured to listen to MIDI Channels `1-16` (OMNI)**. The custom Input Profile is maintained in `qlc/inputprofiles/SMC-Mixer.qxi`.
+- **MIDI Controller:** We use an M-Vave SMC Mixer. Because it sends Pitch Wheel messages for faders across multiple MIDI channels (Fader 1 on Ch 1, Fader 2 on Ch 2, etc.), **QLC+ must be configured to listen to MIDI Channels `1-16` (OMNI)**. Use the built-in "M-Wave SMC Mixer" profile in QLC+.
 
 ## Fixture Workflow (OFL JSON -> QLC+)
 We use a vendored subset of the Open Fixture Library located in `tools/ofl/` to ensure mathematical correctness of DMX boundaries.
