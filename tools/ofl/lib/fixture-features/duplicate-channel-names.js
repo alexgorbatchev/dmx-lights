@@ -1,0 +1,14 @@
+/** @import Fixture from '../model/Fixture.js' */
+
+export default [{
+  name: 'Duplicate channel names',
+
+  /**
+   * @param {Readonly<Fixture>} fixture - The Fixture instance
+   * @returns {boolean} true if the fixture uses the feature
+   */
+  hasFeature: (fixture) => {
+    const uniqueNames = new Set(fixture.allChannels.map((channel) => channel.name));
+    return uniqueNames.size < fixture.allChannels.length;
+  },
+}];

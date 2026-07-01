@@ -1,0 +1,12 @@
+/** @import Fixture from '../model/Fixture.js' */
+
+export default [{
+  name: 'Physical override',
+  description: 'Whether at least one mode uses the \'physical\' property',
+
+  /**
+   * @param {Readonly<Fixture>} fixture - The Fixture instance
+   * @returns {boolean} true if the fixture uses the feature
+   */
+  hasFeature: (fixture) => fixture.modes.some((mode) => mode.physicalOverride !== null),
+}];
