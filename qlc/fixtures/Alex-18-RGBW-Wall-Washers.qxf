@@ -9,7 +9,7 @@
  <Manufacturer>Alex</Manufacturer>
  <Model>18 RGBW Wall Washers</Model>
  <Type>Color Changer</Type>
- <Channel Name="Overall Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="Overall Dimming" Preset="IntensityMasterDimmer"/>
  <Channel Name="RGBW Strobe">
   <Group Byte="0">Shutter</Group>
   <Capability Min="0" Max="4" Preset="ShutterOpen">Shutter open</Capability>
@@ -47,13 +47,13 @@
   <Capability Min="128" Max="255" Preset="SlowToFast">Effect speed slow…fast (Reverse)</Capability>
  </Channel>
  <Channel Name="RGBW Background Color" Preset="ColorMacro"/>
- <Channel Name="RGBW Background Tone Light" Preset="IntensityDimmer"/>
- <Channel Name="RGBW1 Dimming" Preset="IntensityDimmer"/>
- <Channel Name="RGBW2 Dimming" Preset="IntensityDimmer"/>
- <Channel Name="RGBW3 Dimming" Preset="IntensityDimmer"/>
- <Channel Name="RGBW4 Dimming" Preset="IntensityDimmer"/>
- <Channel Name="RGBW5 Dimming" Preset="IntensityDimmer"/>
- <Channel Name="RGBW6 Dimming" Preset="IntensityDimmer"/>
+ <Channel Name="RGBW Background Tone Light" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW1 Dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW2 Dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW3 Dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW4 Dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW5 Dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="RGBW6 Dimming" Preset="IntensityMasterDimmer"/>
  <Channel Name="White1 Auxiliary Light Dimming" Preset="IntensityWhite"/>
  <Channel Name="White2 Auxiliary Light Dimming" Preset="IntensityWhite"/>
  <Channel Name="White3 Auxiliary Light Dimming" Preset="IntensityWhite"/>
@@ -68,28 +68,28 @@
  <Channel Name="White12 Auxiliary Light Dimming" Preset="IntensityWhite"/>
  <Channel Name="White13 Auxiliary Light Dimming" Preset="IntensityWhite"/>
  <Channel Name="R1" Preset="IntensityRed"/>
- <Channel Name="G1" Preset="IntensityGreen"/>
- <Channel Name="B1" Preset="IntensityBlue"/>
- <Channel Name="W1" Preset="IntensityWhite"/>
  <Channel Name="R2" Preset="IntensityRed"/>
- <Channel Name="G2" Preset="IntensityGreen"/>
- <Channel Name="B2" Preset="IntensityBlue"/>
- <Channel Name="W2" Preset="IntensityWhite"/>
  <Channel Name="R3" Preset="IntensityRed"/>
- <Channel Name="G3" Preset="IntensityGreen"/>
- <Channel Name="B3" Preset="IntensityBlue"/>
- <Channel Name="W3" Preset="IntensityWhite"/>
  <Channel Name="R4" Preset="IntensityRed"/>
- <Channel Name="G4" Preset="IntensityGreen"/>
- <Channel Name="B4" Preset="IntensityBlue"/>
- <Channel Name="W4" Preset="IntensityWhite"/>
  <Channel Name="R5" Preset="IntensityRed"/>
- <Channel Name="G5" Preset="IntensityGreen"/>
- <Channel Name="B5" Preset="IntensityBlue"/>
- <Channel Name="W5" Preset="IntensityWhite"/>
  <Channel Name="R6" Preset="IntensityRed"/>
+ <Channel Name="G1" Preset="IntensityGreen"/>
+ <Channel Name="G2" Preset="IntensityGreen"/>
+ <Channel Name="G3" Preset="IntensityGreen"/>
+ <Channel Name="G4" Preset="IntensityGreen"/>
+ <Channel Name="G5" Preset="IntensityGreen"/>
  <Channel Name="G6" Preset="IntensityGreen"/>
+ <Channel Name="B1" Preset="IntensityBlue"/>
+ <Channel Name="B2" Preset="IntensityBlue"/>
+ <Channel Name="B3" Preset="IntensityBlue"/>
+ <Channel Name="B4" Preset="IntensityBlue"/>
+ <Channel Name="B5" Preset="IntensityBlue"/>
  <Channel Name="B6" Preset="IntensityBlue"/>
+ <Channel Name="W1" Preset="IntensityWhite"/>
+ <Channel Name="W2" Preset="IntensityWhite"/>
+ <Channel Name="W3" Preset="IntensityWhite"/>
+ <Channel Name="W4" Preset="IntensityWhite"/>
+ <Channel Name="W5" Preset="IntensityWhite"/>
  <Channel Name="W6" Preset="IntensityWhite"/>
  <Mode Name="5 Channel">
   <Channel Number="0">Red</Channel>
@@ -187,12 +187,61 @@
   <Channel Number="34">White11 Auxiliary Light Dimming</Channel>
   <Channel Number="35">White12 Auxiliary Light Dimming</Channel>
   <Channel Number="36">White13 Auxiliary Light Dimming</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+  </Head>
+  <Head>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+  <Head>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+  </Head>
+  <Head>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+  </Head>
+  <Head>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+  </Head>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
+  <Head/>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="18" Height="1"/>
   <Technical DmxConnector="3-pin" PowerConsumption="0"/>
  </Physical>
 </FixtureDefinition>

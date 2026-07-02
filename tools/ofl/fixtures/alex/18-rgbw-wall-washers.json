@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
   "name": "18 RGBW Wall Washers",
-  "categories": ["Color Changer", "Effect"],
+  "categories": ["Color Changer", "Pixel Bar", "Effect"],
   "meta": {
     "authors": ["Alex"],
     "createDate": "2024-01-01",
@@ -11,6 +11,18 @@
     "DMXconnector": "3-pin",
     "bulb": {
       "type": "LED"
+    }
+  },
+  "matrix": {
+    "pixelCount": [18, 1, 1],
+    "pixelGroups": {
+      "All": "all",
+      "Section 1": ["1", "2", "3"],
+      "Section 2": ["4", "5", "6"],
+      "Section 3": ["7", "8", "9"],
+      "Section 4": ["10", "11", "12"],
+      "Section 5": ["13", "14", "15"],
+      "Section 6": ["16", "17", "18"]
     }
   },
   "availableChannels": {
@@ -83,37 +95,13 @@
     "White10 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
     "White11 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
     "White12 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "White13 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R1": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G1": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B1": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W1": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R2": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G2": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B2": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W2": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R3": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G3": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B3": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W3": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R4": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G4": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B4": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W4": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R5": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G5": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B5": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W5": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    
-    "R6": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "G6": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "B6": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
-    "W6": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } }
+    "White13 Auxiliary Light Dimming": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } }
+  },
+  "templateChannels": {
+    "R$pixelKey": { "capability": { "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "G$pixelKey": { "capability": { "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "B$pixelKey": { "capability": { "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%" } },
+    "W$pixelKey": { "capability": { "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%" } }
   },
   "modes": [
     {
@@ -190,12 +178,12 @@
       "name": "37 Channel",
       "shortName": "37ch",
       "channels": [
-        "R1", "G1", "B1", "W1",
-        "R2", "G2", "B2", "W2",
-        "R3", "G3", "B3", "W3",
-        "R4", "G4", "B4", "W4",
-        "R5", "G5", "B5", "W5",
-        "R6", "G6", "B6", "W6",
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": ["R$pixelKey", "G$pixelKey", "B$pixelKey", "W$pixelKey"]
+        },
         "White1 Auxiliary Light Dimming",
         "White2 Auxiliary Light Dimming",
         "White3 Auxiliary Light Dimming",
