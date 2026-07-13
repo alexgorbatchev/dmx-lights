@@ -3,9 +3,10 @@
 This project is dedicated to creating DMX light fixture definitions for DJ lights based on manufacturer manuals.
 
 ## Setup
-- All source materials and manufacturer documentation are located in the `manuals/` directory. Currently tracked fixtures:
+- All source materials and manufacturer documentation are located in the `manuals/` directory. Currently tracked fixtures and hardware:
   - `Armor Plug Bee Beam Manual.md` (24/32 channels)
   - `LED Mini Moving Light.md` (26 channels)
+  - `M-Vave SMC Mixer Manual.md` (MIDI controller)
   - `RGBW Spot Light Manual.md` (6 channels)
   - `UKing Wall Washers Manual 18 RGBW.md` (5/14/33/37 channels)
 - We target QLC+ v5 for our fixture definitions.

@@ -65,6 +65,8 @@ After copying, restart QLC+ v5 and the fixtures will appear under the manufactur
 
 The at-home setup uses an **M-Vave SMC Mixer** as a physical MIDI controller.
 
+* **User Manual:** [M-Vave SMC Mixer Manual.md](manuals/M-Vave%20SMC%20Mixer%20Manual.md) (PDF version: [M-Vave SMC Mixer Manual.pdf](manuals/M-Vave%20SMC%20Mixer%20Manual.pdf))
+
 ### The Pitch Wheel Quirk
 The M-Vave SMC Mixer sends Pitch Wheel messages for its faders, but **sends each fader on a different MIDI channel** (e.g., Fader 1 on Channel 1, Fader 2 on Channel 2, and so on).
 
