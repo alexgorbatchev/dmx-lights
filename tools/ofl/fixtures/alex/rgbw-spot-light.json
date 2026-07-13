@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "RGBW Spot Light",
+  "categories": ["Color Changer", "Strobe", "Effect"],
+  "meta": {
+    "authors": ["Alex"],
+    "createDate": "2026-07-13",
+    "lastModifyDate": "2026-07-13"
+  },
+  "physical": {
+    "dimensions": [150, 150, 65],
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Master Control": {
+      "capabilities": [
+        { "dmxRange": [0, 8], "type": "NoFunction" },
+        { "dmxRange": [9, 134], "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "Red green blue white light from dark to bright" },
+        { "dmxRange": [135, 239], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" },
+        { "dmxRange": [240, 255], "type": "Effect", "effectName": "Ch2-ch5 effect" }
+      ]
+    },
+    "Red": {
+      "capabilities": [
+        { "dmxRange": [0, 0], "type": "ColorIntensity", "color": "Red", "brightness": "0%", "comment": "Red light keeps dark" },
+        { "dmxRange": [1, 255], "type": "ColorIntensity", "color": "Red", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "Red light from dark to bright" }
+      ]
+    },
+    "Green": {
+      "capabilities": [
+        { "dmxRange": [0, 0], "type": "ColorIntensity", "color": "Green", "brightness": "0%", "comment": "green light keeps dark" },
+        { "dmxRange": [1, 255], "type": "ColorIntensity", "color": "Green", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "green light from dark to bright" }
+      ]
+    },
+    "Blue": {
+      "capabilities": [
+        { "dmxRange": [0, 0], "type": "ColorIntensity", "color": "Blue", "brightness": "0%", "comment": "blue light keeps dark" },
+        { "dmxRange": [1, 255], "type": "ColorIntensity", "color": "Blue", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "blue light from dark to bright" }
+      ]
+    },
+    "White": {
+      "capabilities": [
+        { "dmxRange": [0, 0], "type": "ColorIntensity", "color": "White", "brightness": "0%", "comment": "white light keeps dark" },
+        { "dmxRange": [1, 255], "type": "ColorIntensity", "color": "White", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "white light from dark to bright" }
+      ]
+    },
+    "Effect Mode": {
+      "capabilities": [
+        { "dmxRange": [0, 2], "type": "NoFunction" },
+        { "dmxRange": [3, 31], "type": "Effect", "effectName": "red, green, blue, white jump change" },
+        { "dmxRange": [32, 63], "type": "Effect", "effectName": "red static, green, blue, white jump change" },
+        { "dmxRange": [64, 79], "type": "Effect", "effectName": "green static, red, blue, white jump change" },
+        { "dmxRange": [80, 95], "type": "Effect", "effectName": "blue static, red, green, white jump change" },
+        { "dmxRange": [96, 111], "type": "Effect", "effectName": "white static, red, green, blue jump change" },
+        { "dmxRange": [112, 143], "type": "Effect", "effectName": "red, green, blue, white gradual change, speed slow" },
+        { "dmxRange": [144, 159], "type": "Effect", "effectName": "red, green, gradual change, speed fast" },
+        { "dmxRange": [160, 175], "type": "Effect", "effectName": "red, blue, gradual change, green white close" },
+        { "dmxRange": [176, 191], "type": "Effect", "effectName": "Green blue gradual change, red white close" },
+        { "dmxRange": [192, 207], "type": "Effect", "effectName": "red, green, blue gradual change" },
+        { "dmxRange": [208, 223], "type": "Effect", "effectName": "red, green, blue white jump change" },
+        { "dmxRange": [224, 239], "type": "Effect", "effectName": "Sound 1 Change color and strobe", "soundControlled": true },
+        { "dmxRange": [240, 249], "type": "Effect", "effectName": "Sound 2 Change colors with sound", "soundControlled": true },
+        { "dmxRange": [250, 255], "type": "Effect", "effectName": "Sound 3 Change colors and flicker with sound", "soundControlled": true }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "6 Channel",
+      "shortName": "6ch",
+      "channels": [
+        "Master Control",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Effect Mode"
+      ]
+    }
+  ]
+}
