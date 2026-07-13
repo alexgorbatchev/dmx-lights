@@ -8,7 +8,7 @@
  </Creator>
  <Manufacturer>Alex</Manufacturer>
  <Model>18 RGBW Wall Washers</Model>
- <Type>Color Changer</Type>
+ <Type>LED Bar (Beams)</Type>
  <Channel Name="Overall Dimming" Preset="IntensityMasterDimmer"/>
  <Channel Name="RGBW Strobe">
   <Group Byte="0">Shutter</Group>
