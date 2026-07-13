@@ -82,6 +82,8 @@ When you use DMX512 stage lighting controller with this product, take the common
 
 This fixture operates under a standard **6-channel (6CH)** DMX profile.
 
+**CRITICAL GOTCHA:** To manually mix colors using Channels 2, 3, 4, and 5, you MUST set Channel 1 between 240-255. If Channel 1 is between 9-134, it will override manual control and force all colors on simultaneously as a global dimmer.
+
 | channel | channel value | Function |
 | :---: | :---: | :--- |
 | **CH1** | 0~8 | No effect |

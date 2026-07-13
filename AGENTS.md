@@ -3,7 +3,11 @@
 This project is dedicated to creating DMX light fixture definitions for DJ lights based on manufacturer manuals.
 
 ## Setup
-- All source materials and manufacturer documentation are located in the `manuals/` directory.
+- All source materials and manufacturer documentation are located in the `manuals/` directory. Currently tracked fixtures:
+  - `Armor Plug Bee Beam Manual.md` (24/32 channels)
+  - `LED Mini Moving Light.md` (26 channels)
+  - `RGBW Spot Light Manual.md` (6 channels)
+  - `UKing Wall Washers Manual 18 RGBW.md` (5/14/33/37 channels)
 - We target QLC+ v5 for our fixture definitions.
 - All QLC-related files and outputs must be kept strictly within the `qlc/` directory.
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
