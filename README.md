@@ -29,6 +29,9 @@ The following fixtures are currently defined, with links to their manufacturer m
 * **QLC+ v5 Fixture Profile:** [Alex-LED-Mini-Moving-Light.qxf](qlc/fixtures/Alex-LED-Mini-Moving-Light.qxf)
 
 ### 3. RGBW Spot Light
+
+![RGBW Spot Light](manuals/RGBW%20Spot%20Light.jpg)
+
 * **DMX Modes:** 6 channels
 * **Manufacturer Manual:** [RGBW Spot Light Manual.md](manuals/RGBW%20Spot%20Light%20Manual.md)
 * **OFL JSON Definition:** [rgbw-spot-light.json](tools/ofl/fixtures/alex/rgbw-spot-light.json)
