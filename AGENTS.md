@@ -54,6 +54,7 @@ Because manufacturer manuals frequently contain lies, typos, or omitted details,
 - Rely on the original markdown and PDF manuals in the `manuals/` directory for fixture DMX channel mappings and descriptions.
 - Ensure all DMX definitions perfectly match the 0-255 value ranges and channel orders specified in the manuals.
 - Name fixture definition files consistently with the manual names (e.g., `LED Mini Moving Light`).
+- If physical fixture dimensions are not specified in the printed manual, check the user's prompt or ask the user for these dimensions (as `[width, height, depth]` in millimeters) and include them in the OFL JSON definition.
 
 ## Gotchas
 - Manufacturer manuals sometimes contain typos or confusing macro channel descriptions; carefully check the value ranges (e.g., 0-10 vs 11-255).
