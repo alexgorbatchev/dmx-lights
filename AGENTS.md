@@ -57,6 +57,7 @@ Because manufacturer manuals frequently contain lies, typos, or omitted details,
 - If physical fixture dimensions are not specified in the printed manual, check the user's prompt or ask the user for these dimensions (as `[width, height, depth]` in millimeters) and include them in the OFL JSON definition.
 
 ## Gotchas
+- **QLC+ 3D Viewer Shapes:** QLC+ uses the *first* category listed in the OFL JSON `categories` array to determine the 3D model shape. If you define a linear bar but list `"Color Changer"` first, QLC+ will render a single round PAR can. Always list structural categories like `"Pixel Bar"` or `"Matrix"` first if you want the 3D viewer to render a physical bar.
 - Manufacturer manuals sometimes contain typos or confusing macro channel descriptions; carefully check the value ranges (e.g., 0-10 vs 11-255).
 - Some lights have multiple DMX channel modes (e.g., 14-channel vs 37-channel mode). Make sure to account for all available modes when creating definitions.
 
