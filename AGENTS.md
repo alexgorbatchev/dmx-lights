@@ -10,6 +10,7 @@ This project is dedicated to creating DMX light fixture definitions for DJ light
   - `RGBW Spot Light Manual.md` (6 channels)
   - `UKing Wall Washers Manual 18 RGBW.md` (5/14/33/37 channels)
 - We target QLC+ v5 for our fixture definitions.
+- The primary QLC+ workspace file is `qlc/main.qxw`. All UI configurations, Virtual Console setups, and Submaster/Scene mappings for live control are managed here.
 - All QLC+ v5-related files and outputs must be kept strictly within the `qlc/` directory.
 - We use the Open Fixture Library (OFL) format/repo (https://github.com/OpenLightingProject/open-fixture-library) as a reference and potential tool for creating and managing these definitions.
 - **MIDI Controller:** We use an M-Vave SMC Mixer. 
