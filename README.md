@@ -36,6 +36,7 @@ The following fixtures are currently defined, with links to their manufacturer m
 * **Manufacturer Manual:** [RGBW Spot Light Manual.md](manuals/RGBW%20Spot%20Light%20Manual.md)
 * **OFL JSON Definition:** [rgbw-spot-light.json](tools/ofl/fixtures/alex/rgbw-spot-light.json)
 * **QLC+ v5 Fixture Profile:** [Alex-RGBW-Spot-Light.qxf](qlc/fixtures/Alex-RGBW-Spot-Light.qxf)
+* **Amazon Link:** [Buy on Amazon](https://www.amazon.com/dp/B0DFWBWF9W)
 
 ### 4. UKing 18 RGBW Wall Washers
 
@@ -66,6 +67,7 @@ After copying, restart QLC+ v5 and the fixtures will appear under the manufactur
 The at-home setup uses an **M-Vave SMC Mixer** as a physical MIDI controller.
 
 * **User Manual:** [M-Vave SMC Mixer Manual.md](manuals/M-Vave%20SMC%20Mixer%20Manual.md) (PDF version: [M-Vave SMC Mixer Manual.pdf](manuals/M-Vave%20SMC%20Mixer%20Manual.pdf))
+* **Amazon Link:** [Buy on Amazon](https://www.amazon.com/dp/B0F7WVH1WB)
 
 ### The Pitch Wheel Quirk
 The M-Vave SMC Mixer sends Pitch Wheel messages for its faders, but **sends each fader on a different MIDI channel** (e.g., Fader 1 on Channel 1, Fader 2 on Channel 2, and so on).
