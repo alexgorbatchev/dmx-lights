@@ -8,6 +8,7 @@
     "lastModifyDate": "2024-01-01"
   },
   "physical": {
+    "dimensions": [945, 72, 125],
     "DMXconnector": "3-pin",
     "bulb": {
       "type": "LED"
