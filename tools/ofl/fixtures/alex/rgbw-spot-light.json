@@ -16,6 +16,7 @@
   },
   "availableChannels": {
     "Master Control": {
+      "defaultValue": 255,
       "capabilities": [
         { "dmxRange": [0, 8], "type": "NoFunction" },
         { "dmxRange": [9, 134], "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "Red green blue white light from dark to bright" },
