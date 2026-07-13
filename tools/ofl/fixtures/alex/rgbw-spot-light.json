@@ -20,7 +20,7 @@
         { "dmxRange": [0, 8], "type": "NoFunction" },
         { "dmxRange": [9, 134], "type": "Intensity", "brightnessStart": "0%", "brightnessEnd": "100%", "comment": "Red green blue white light from dark to bright" },
         { "dmxRange": [135, 239], "type": "ShutterStrobe", "shutterEffect": "Strobe", "speedStart": "slow", "speedEnd": "fast" },
-        { "dmxRange": [240, 255], "type": "Effect", "effectName": "Ch2-ch5 effect" }
+        { "dmxRange": [240, 255], "type": "Effect", "effectName": "Enable Ch2-ch5 manual control" }
       ]
     },
     "Red": {

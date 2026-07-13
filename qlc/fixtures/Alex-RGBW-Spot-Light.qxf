@@ -14,7 +14,7 @@
   <Capability Min="0" Max="8">No function</Capability>
   <Capability Min="9" Max="134">Intensity 0…100% (Red green blue white light from dark to bright)</Capability>
   <Capability Min="135" Max="239" Preset="StrobeSlowToFast">Strobe slow…fast</Capability>
-  <Capability Min="240" Max="255">Ch2-ch5 effect</Capability>
+  <Capability Min="240" Max="255">Enable Ch2-ch5 manual control</Capability>
  </Channel>
  <Channel Name="Red">
   <Group Byte="0">Intensity</Group>
