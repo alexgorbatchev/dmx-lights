@@ -11,12 +11,18 @@ All fixture definitions are written using the [Open Fixture Library (OFL)](https
 The following fixtures are currently defined, with links to their manufacturer manuals, OFL definitions, and exported QLC+ v5 profiles:
 
 ### 1. Plus Bee Beam Moving Head Light (Armor Plug Bee Beam)
+
+![Plus Bee Beam Moving Head Light](manuals/Armor%20Plug%20Bee%20Beam%20Manual.png)
+
 * **DMX Modes:** 24 or 32 channels
 * **Manufacturer Manual:** [Armor Plug Bee Beam Manual.md](manuals/Armor%20Plug%20Bee%20Beam%20Manual.md) (PDF version: [Armor Plug Bee Beam Manual.pdf](manuals/Armor%20Plug%20Bee%20Beam%20Manual.pdf))
 * **OFL JSON Definition:** [plus-bee-beam-moving-head.json](tools/ofl/fixtures/alex/plus-bee-beam-moving-head.json)
 * **QLC+ v5 Fixture Profile:** [Alex-Plus-Bee-Beam-Moving-Head-Light.qxf](qlc/fixtures/Alex-Plus-Bee-Beam-Moving-Head-Light.qxf)
 
 ### 2. LED Mini Moving Light
+
+![LED Mini Moving Light](manuals/LED%20Mini%20Moving%20Light.png)
+
 * **DMX Modes:** 26 channels
 * **Manufacturer Manual:** [LED Mini Moving Light.md](manuals/LED%20Mini%20Moving%20Light.md) (PDF version: [LED Mini Moving Light.pdf](manuals/LED%20Mini%20Moving%20Light.pdf))
 * **OFL JSON Definition:** [led-mini-moving-light.json](tools/ofl/fixtures/alex/led-mini-moving-light.json)
@@ -29,6 +35,9 @@ The following fixtures are currently defined, with links to their manufacturer m
 * **QLC+ v5 Fixture Profile:** [Alex-RGBW-Spot-Light.qxf](qlc/fixtures/Alex-RGBW-Spot-Light.qxf)
 
 ### 4. UKing 18 RGBW Wall Washers
+
+![UKing 18 RGBW Wall Washers](manuals/UKing%2018%20RGBW%20Wall%20Washers.png)
+
 * **DMX Modes:** 5, 14, 33, or 37 channels
 * **Manufacturer Manual:** [UKing Wall Washers Manual 18 RGBW.md](manuals/UKing%20Wall%20Washers%20Manual%2018%20RGBW.md) (PDF version: [UKing 18 RGBW Wall Washers Manual.pdf](manuals/UKing%2018%20RGBW%20Wall%20Washers%20Manual.pdf))
 * **OFL JSON Definition:** [18-rgbw-wall-washers.json](tools/ofl/fixtures/alex/18-rgbw-wall-washers.json)
